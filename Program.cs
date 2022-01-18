@@ -13,6 +13,11 @@ namespace cgomez_DataEncodingInCSharp
             encrypted = cipher.Encrypt("rosebud");
             Console.WriteLine($"The encrypted message is: '{encrypted}'");
 
+            string decrypted;
+            decrypted = cipher.Decrypt("rosebud");
+            Console.WriteLine($"The encrypted message is: '{decrypted}'");
+
+
             
             
         }
