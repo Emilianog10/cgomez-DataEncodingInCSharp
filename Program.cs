@@ -6,25 +6,13 @@ namespace cgomez_DataEncodingInCSharp
     {
         static void Main(string[] args)
         {
-            char ch; 
-            ch = 'A';
-            Console.WriteLine($"ch is storing the value : {ch}");
+            Cipher cipher;
+            cipher = new Cipher(5);
 
-            int ch_decimal;
-            ch_decimal = ch;
-            Console.WriteLine($"The decimal ch is: {ch_decimal}");
+            string encrypted;
+            encrypted = cipher.Encrypt("rosebud");
+            Console.WriteLine($"The encrypted message is: '{encrypted}'");
 
-            int toConvert;
-            Console.Write("Enter an integer: ");
-            toConvert = int.Parse(Console.ReadLine());
-
-            char asChar;
-            asChar = (Char)toConvert;
-            Console.WriteLine($"The integer {toConvert} cast to a char is '{asChar}'");
-
-            char b;
-            b = (char)('A'+ 1);
-            Console.WriteLine($"'A' + 1 = '{b}'");  
             
 
         }
