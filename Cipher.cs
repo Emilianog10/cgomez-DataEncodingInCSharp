@@ -43,7 +43,7 @@ public class Cipher
             newMessage += (char)(c + shift);
 
         }
-        return null;
+        return newMessage;
     }
 
 
